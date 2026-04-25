@@ -1,0 +1,7 @@
+{
+  "name": "KANO Vaihingen | Pizza, Pide, Burger & Döner",
+  "description": "Erlebe den besten Döner & Pizza in Vaihingen an der Enz. Handgeschichtetes Fleisch, frische Pide und saftige Burger in der Steinbeisstraße 41. Jetzt online bestellen!",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

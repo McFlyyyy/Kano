@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #D97706;
+  --color-primary-foreground: #FFFFFF;
+  --color-background: #FAFAFA;
+  --color-surface: #FFFFFF;
+  --color-ink: #171717;
+  --color-ink-muted: #525252;
+  --color-accent: #F59E0B;
+  --color-hero-bg: #0A0A0A;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-ink font-sans antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-3 rounded-full bg-primary text-primary-foreground font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95;
+  }
+
+  .glass-header {
+    @apply fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md border-b border-ink/5 transition-shadow duration-300;
+  }
+}
